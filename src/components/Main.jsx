@@ -9,7 +9,7 @@ const Main = () => {
             {[`/pockedex-react/`,`/pockedex-react/home`].map(p=>
                 <Route key={p} path={p} element={<Home/>}></Route>
             )}
-            {[`/pockedex-react/poke`, `/pockedex-react/poke/:pokemonsId`].map(p =>
+            {[`/pockedex-react/poke/`, `/pockedex-react/poke/:pokemonsId`].map(p =>
                 <Route key={p} path={p} element={<Poke/>}></Route>
             )}
         </Routes>

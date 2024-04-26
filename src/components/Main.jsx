@@ -6,10 +6,10 @@ import Poke from "../pages/Poke.jsx";
 const Main = () => {
     return (
         <Routes>
-            {[`/`,`home`].map(p=>
+            {[`/pockedex-react/`,`/pockedex-react/home`].map(p=>
                 <Route key={p} path={p} element={<Home/>}></Route>
             )}
-            {[`poke`, `poke/:pokemonsId`].map(p =>
+            {[`/pockedex-react/poke`, `/pockedex-react/poke/:pokemonsId`].map(p =>
                 <Route key={p} path={p} element={<Poke/>}></Route>
             )}
         </Routes>

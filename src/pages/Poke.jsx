@@ -11,7 +11,7 @@ const Poke = () => {
     const inputRef = useRef(null);
 
     const inputReadValue = () => {
-        navigate(`/poke/${inputRef.current.value.toLowerCase()}`)
+        navigate(`/pokedex-react/poke/${inputRef.current.value.toLowerCase()}`)
     }
     const getInfo = async () => {
         const response = await fetch(`${base_url}${version}pokemon/${pokemonsId}`);
@@ -36,7 +36,7 @@ const Poke = () => {
     }
     useEffect(() => {
         if (!PokemonArray.includes(pokemonsId)) {
-            navigate(`/poke/${defaultPokemon}`)
+            navigate(`/pokedex-react/poke/${defaultPokemon}`)
         } else {
             changeMainPoke(pokemonsId);
             const pokemon = JSON.parse(localStorage.getItem(pokemonsId));

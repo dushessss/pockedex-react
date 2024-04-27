@@ -1,8 +1,14 @@
-# React + Vite
+# Pokedex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was made as my homework on course.<br>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To consolidate knowledge about React and fetch.
+## I was using:
+- [Vite](https://vitejs.dev/).
+- [React](https://react.dev/).
+- [React-router-dom](https://reactrouter.com/en/main) for routing.
+- [PokeApi](https://pokeapi.co/) for detailed info about pokemon.
+## About the project
+- The home page endlessly scrolls through pictures of Pokemon cards, which when clicked opens an about page with detailed information about the Pokemon.
+- On the about page you can also write the name of a Pokemon and it will display information on this Pokemon, you can also change the name of the Pokemon in the address bar and it will also show information on it.
+- If there is a mistake in the name of a Pokemon or such a Pokemon does not exist, it shows information about Bulbasaur

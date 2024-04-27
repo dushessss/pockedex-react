@@ -7,7 +7,7 @@ import {useNavigate} from "react-router-dom";
 const Scroll = () => {
     const navigate = useNavigate();
     const handleClick = (name) =>{
-        navigate(`/poke/${name}`);
+        navigate(`/pockedex-react/poke/${name}`);
     }
     return (
         <div
